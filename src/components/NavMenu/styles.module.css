@@ -1,4 +1,9 @@
+.close_menu {
+    display: none;
+}
+
 .nav_container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     width: 100vw;

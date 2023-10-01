@@ -1,0 +1,126 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile_picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+        14px 0 1px rgba(216, 178, 254, 1),
+        28px 0 1px rgba(229, 204, 254, 1),
+        42px 0 1px rgba(242, 229, 254, 1);
+}
+
+.profile_picture img {
+    width: 280px;
+    height: auto;
+}
+
+.description {
+    margin: 0;
+    margin-top: 60px;
+}
+
+.description h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.description h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.description h1 span,
+.description p span {
+    color: var(--primary-color);
+}
+
+.description p {
+    margin-top: 15px;
+    color: #777;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.action {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action>a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .2s ease-in;
+}
+
+.action>a:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.icon {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon a {
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+    transition: all .2s ease-in;
+}
+
+.icon a:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.icon a img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .profile_picture {
+        width: 400px;
+        height: 400px;
+    }
+
+    .profile_picture img {
+        width: 400px;
+        height: auto;
+
+    }
+
+    .description {
+        margin-left: 150px;
+    }
+
+    .description p {
+        max-width: 768px;
+    }
+}
