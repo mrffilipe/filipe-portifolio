@@ -1,8 +1,7 @@
 .content {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .profile_picture {
@@ -106,21 +105,16 @@
 
 @media screen and (min-width: 768px) {
     .profile_picture {
-        width: 400px;
-        height: 400px;
+        width: 340px;
+        height: 340px;
     }
 
     .profile_picture img {
-        width: 400px;
+        width: 340px;
         height: auto;
-
-    }
-
-    .description {
-        margin-left: 150px;
     }
 
     .description p {
-        max-width: 768px;
+        max-width: 900px;
     }
 }

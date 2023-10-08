@@ -8,8 +8,7 @@ import GithubSvg from '../assets/svg/github.svg'
 
 export default function Home() {
   return (
-    <section id='container'>
-      <div className={styles.content}>
+      <section className={styles.content}>
         <div className={styles.profile_picture}>
           <Image
             src={ProfilePicture}
@@ -32,7 +31,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   )
 }

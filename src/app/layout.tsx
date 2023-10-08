@@ -17,7 +17,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <NavMenu />
-        {children}
+        <div id='container'>
+          {children}
+        </div>
       </body>
     </html>
   )

@@ -28,25 +28,25 @@ const NavMenu = () => {
                 <nav className={styles.nav}>
                     <ul className={styles.menu}>
                         <li>
-                            <Link href='#'>
+                            <Link href='/' onClick={handleToggleMenu}>
                                 <HomeOutlined />
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link href='#'>
+                            <Link href='#' onClick={handleToggleMenu}>
                                 <CodeOutlined />
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href='#'>
+                            <Link href='#' onClick={handleToggleMenu}>
                                 <WorkOutlineOutlined />
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link href='#'>
+                            <Link href='/contact' onClick={handleToggleMenu}>
                                 <LocalPhone />
                                 Contact
                             </Link>
