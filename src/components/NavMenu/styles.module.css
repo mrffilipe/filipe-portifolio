@@ -1,54 +1,29 @@
-.open_menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.open_menu button {
-    margin: 10px 10px 10px 0;
-    padding: 2px;
-    background: none;
-    border: none;
-}
-
-.open_menu button svg {
-    color: #000;
-    font-size: 3em;
-}
-
-.open_menu.close_menu,
-.nav_container.close_menu {
-    display: none;
-}
-
 .nav_container {
-    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     background-color: var(--primary-color);
     transition: all .2s ease-in;
 }
 
-.nav_container button {
-    margin: 10px 10px 10px 0;
-    align-self: flex-end;
-    padding: 2px;
+.toggle_menu {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle_menu button {
+    cursor: pointer;
     background: none;
     border: none;
 }
 
-.nav_container button svg {
-    color: #fff;
+.toggle_menu svg {
     font-size: 4em;
 }
 
-.nav_container.open {
-    display: block;
-}
-
 .nav {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,65 +31,62 @@
 
 .menu {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.menu>li {
+.menu li {
     margin: 5px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.menu a {
-    padding: 12px 16px;
-    text-decoration: none;
+.menu li a {
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    padding: 12px 16px;
     font-size: 1.6em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     transition: all .2s ease-in;
 }
 
-.menu a:hover,
-.menu a:active {
+.menu li a:hover,
+.menu li a:active {
     color: var(--accent-color);
 }
 
-.menu a svg {
+.menu li svg {
+    display: none;
+}
+
+.nav_container.menu_height {
+    background-color: aqua;
+    height: min-content;
+}
+
+.adjust_height {
+    height: auto;
+}
+
+.close_menu {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .open_menu {
-        display: none;
-    }
-
     .nav_container {
-        display: block !important;
-        width: 200px;
+        width: 240px;
+        display: flex;
     }
 
-    .nav_container button {
+    .toggle_menu {
         display: none;
-    }
-
-    .nav {
-        position: fixed;
-        background-color: var(--primary-color);
-        width: 200px;
-        height: 100vh;
-    }
-
-    .menu {
-        align-items: flex-start;
     }
 
     .menu li {
-        width: 100%;
+        justify-content: flex-start;
     }
 
     .menu li a {
-        display: flex;
-        align-items: center;
+        width: 100%;
         font-size: 1.4em;
     }
 
@@ -125,9 +97,17 @@
         box-shadow: 4px 4px 8px rgba(0, 0, 0, .1);
     }
 
-    .menu a svg {
-        display: inline;
+    .menu li svg {
+        font-size: 1.6em;
+        display: inline-block;
         margin-right: 15px;
-        font-size: 1.4em;
+    }
+
+    .adjust_height {
+        height: 100vh;
+    }
+
+    .close_menu {
+        display: flex;
     }
 }

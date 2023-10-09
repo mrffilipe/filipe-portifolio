@@ -15,46 +15,39 @@ const NavMenu = () => {
     }
 
     return (
-        <>
-            <div className={`${styles.open_menu} ${menuOpen ? styles.close_menu : ''}`}>
-                <button onClick={handleToggleMenu}>
-                    <MenuOutlined />
-                </button>
+        <div className={`${styles.nav_container} ${menuOpen ? '' : styles.adjust_height}`}>
+            <div className={styles.toggle_menu}>
+                <button onClick={handleToggleMenu}>{menuOpen ? <CloseOutlined /> : <MenuOutlined />}</button>
             </div>
-            <div className={`${styles.nav_container} ${menuOpen ? '' : styles.close_menu}`}>
-                <button onClick={handleToggleMenu}>
-                    <CloseOutlined />
-                </button>
-                <nav className={styles.nav}>
-                    <ul className={styles.menu}>
-                        <li>
-                            <Link href='/' onClick={handleToggleMenu}>
-                                <HomeOutlined />
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' onClick={handleToggleMenu}>
-                                <CodeOutlined />
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='#' onClick={handleToggleMenu}>
-                                <WorkOutlineOutlined />
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/contact' onClick={handleToggleMenu}>
-                                <LocalPhone />
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </>
+            <nav className={`${styles.nav} ${menuOpen ? '' : styles.close_menu}`} >
+                <ul className={styles.menu}>
+                    <li>
+                        <Link href='/' onClick={handleToggleMenu}>
+                            <HomeOutlined />
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/projects' onClick={handleToggleMenu}>
+                            <CodeOutlined />
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/experiencie' onClick={handleToggleMenu}>
+                            <WorkOutlineOutlined />
+                            Experiencie
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/contact' onClick={handleToggleMenu}>
+                            <LocalPhone />
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </div >
     )
 }
 

@@ -12,23 +12,23 @@
     --accent-color: #FE00FE;
 }
 
-:root h1,
-h2 {
+h1,
+h2,
+p,
+a {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {}
+body {
+    height: 100vh;
+}
 
 #container {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    height: 100vh;
+    height: 100%;
     padding: 20px;
-
-    overflow-y: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,10 +37,7 @@ body {}
     }
 
     #container {
-        /* flex: 1; */
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
+        flex: 1;
         padding: 80px;
     }
 }
