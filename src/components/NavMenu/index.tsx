@@ -15,7 +15,7 @@ const NavMenu = () => {
     }
 
     return (
-        <div className={`${styles.nav_container} ${menuOpen ? '' : styles.adjust_height}`}>
+        <div className={`${styles.nav_container} ${menuOpen ? '' : styles.readjust}`}>
             <div className={styles.toggle_menu}>
                 <button onClick={handleToggleMenu}>{menuOpen ? <CloseOutlined /> : <MenuOutlined />}</button>
             </div>

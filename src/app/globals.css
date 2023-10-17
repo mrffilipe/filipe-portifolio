@@ -15,29 +15,26 @@
 h1,
 h2,
 p,
-a {
+a,
+span {
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#container {
+main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 20px;
 }
 
 @media screen and (min-width: 768px) {
     body {
-        display: flex;
-    }
-
-    #container {
-        flex: 1;
-        padding: 80px;
+        flex-wrap: nowrap;
     }
 }
