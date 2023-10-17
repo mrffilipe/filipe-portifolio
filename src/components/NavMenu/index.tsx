@@ -20,32 +20,30 @@ const NavMenu = () => {
                 <button onClick={handleToggleMenu}>{menuOpen ? <CloseOutlined /> : <MenuOutlined />}</button>
             </div>
             <nav className={`${styles.nav} ${menuOpen ? '' : styles.close_menu}`} >
-                <ul className={styles.menu}>
-                    <li>
-                        <Link href='/' onClick={handleToggleMenu}>
-                            <HomeOutlined />
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/projects' onClick={handleToggleMenu}>
-                            <CodeOutlined />
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/experiencie' onClick={handleToggleMenu}>
-                            <WorkOutlineOutlined />
-                            Experiencie
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/contact' onClick={handleToggleMenu}>
-                            <LocalPhone />
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
+                <li>
+                    <Link href='/' onClick={handleToggleMenu}>
+                        <HomeOutlined />
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link href='/projects' onClick={handleToggleMenu}>
+                        <CodeOutlined />
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link href='/experiencie' onClick={handleToggleMenu}>
+                        <WorkOutlineOutlined />
+                        Experiencie
+                    </Link>
+                </li>
+                <li>
+                    <Link href='/contact' onClick={handleToggleMenu}>
+                        <LocalPhone />
+                        Contact
+                    </Link>
+                </li>
             </nav>
         </div >
     )

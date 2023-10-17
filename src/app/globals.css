@@ -20,21 +20,19 @@ span {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 main {
-    flex: 1;
+    padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
     body {
-        flex-wrap: nowrap;
+        display: flex;
+    }
+
+    main {
+        flex: 1;
+        padding: 120px 80px;
+        overflow-y: auto;
     }
 }
