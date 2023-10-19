@@ -7,32 +7,19 @@
 }
 
 :root {
-    --primary-color: #7F00FE;
-    --complementary-color: #7FFE00;
-    --accent-color: #FE00FE;
+    --primary-color: #ccc;
+    --alternative-color: #4CAF50;
+    --accent-color: #009688;
+    --main-text-color: #333;
 }
 
 h1,
 h2,
+h3,
 p,
 a,
 span {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    padding: 30px;
-    display: flex;
-}
-
-@media screen and (min-width: 768px) {
-    body {
-        display: flex;
-    }
-
-    main {
-        flex: 1;
-        padding: 120px 80px;
-        overflow-y: auto;
-    }
-}
+@media screen and (min-width: 768px) {}
