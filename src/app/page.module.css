@@ -69,8 +69,8 @@
 }
 
 .links a {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 5px;
     border-radius: 4px;
     display: flex;
@@ -80,6 +80,6 @@
 }
 
 .links a img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }

@@ -4,8 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowCircleRight } from '@mui/icons-material'
 
+import WhatIDo from '@/components/WhatIDo'
+
 import LinkedinSvg from '../assets/svg/linkedin.svg'
 import GithubSvg from '../assets/svg/github.svg'
+import FeaturedProjects from '@/components/FeaturedProjects'
 
 export default function Home() {
   return (
@@ -34,6 +37,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <WhatIDo />
+      <FeaturedProjects />
     </>
   )
 }

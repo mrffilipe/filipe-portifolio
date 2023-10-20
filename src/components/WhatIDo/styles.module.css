@@ -1,0 +1,48 @@
+.what_i_do {
+    margin-top: 50px;
+}
+
+.description h2 {
+    font-size: 1.6em;
+    padding-left: 15px;
+    border-left: 3px solid var(--alternative-color);
+}
+
+.description p {
+    margin-top: 15px;
+    color: var(--main-text-color);
+}
+
+.description p a {
+    text-decoration: none;
+    color: var(--alternative-color);
+    font-weight: 500;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    margin-right: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.card span {
+    font-weight: 700;
+}
+
+.card p {
+    margin-top: 10px;
+    color: var(--main-text-color);
+}

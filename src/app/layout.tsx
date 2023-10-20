@@ -1,7 +1,9 @@
 import './globals.css'
+
 import type { Metadata } from 'next'
 
 import NavMenu from '@/components/NavMenu'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Filipe folio',
@@ -17,9 +19,10 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <NavMenu />
-        <main>
-          {children}
-        </main>
+        <div id='container'>
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
