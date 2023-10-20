@@ -1,42 +1,37 @@
-.contact {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.contact h2 {
+    text-align: center;
+    font-size: 1.6em;
 }
 
-.description h1 {
-    color: var(--primary-color);
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 15px;
+.contact p {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--main-text-color);
 }
 
-.description>div {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.description>div img {
-    width: 42px;
-}
-
-.description>div svg {
-    font-size: 2.6em;
-    color: var(--primary-color);
-}
-
-.description>div a,
-.description>div span {
-    margin-left: 15px;
+.contact p span {
     text-decoration: none;
-    color: #777;
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    transition: all .2s ease-in;
+    color: var(--alternative-color);
+    font-weight: 500;
 }
 
-.description>div a:hover {
-    color: var(--primary-color);
+.social_channels {
+    margin-top: 15px;
+}
+
+.social_channels p {
+    text-align: center;
+}
+
+.links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links img {
+    margin: 0 5px;
+    width: 25px;
+    height: auto;
 }
