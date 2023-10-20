@@ -1,15 +1,15 @@
-.contact h2 {
+.description h2 {
     text-align: center;
     font-size: 1.6em;
 }
 
-.contact p {
+.description p {
     margin-top: 15px;
     text-align: center;
     color: var(--main-text-color);
 }
 
-.contact p span {
+.description p span {
     text-decoration: none;
     color: var(--alternative-color);
     font-weight: 500;
