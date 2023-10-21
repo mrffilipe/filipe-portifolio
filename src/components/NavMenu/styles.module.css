@@ -1,6 +1,9 @@
 .nav_container {
     background-color: var(--alternative-color);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+
+    position: sticky;
+    top: 0;
 }
 
 .header_menu {
@@ -74,4 +77,44 @@
 
 .nav a svg {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav_container {
+        width: 240px;
+        height: 100vh;
+        box-shadow: none;
+
+        position: static;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .nav {
+        width: 240px;
+        height: 100vh;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, .3);
+    }
+
+    .nav.close_menu {
+        display: flex;
+    }
+
+    .nav a {
+        display: flex;
+        align-items: center;
+        transition: all .3s ease;
+    }
+
+    .nav a:hover {
+        color: #000;
+    }
+
+    .nav a svg {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
 }

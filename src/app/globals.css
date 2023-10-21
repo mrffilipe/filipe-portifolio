@@ -26,4 +26,16 @@ span {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    #container {
+        flex: 1;
+    }
+
+    main {
+        padding: 120px 80px;
+    }
+}
