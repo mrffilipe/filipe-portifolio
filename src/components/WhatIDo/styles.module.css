@@ -17,6 +17,7 @@
     text-decoration: none;
     color: var(--alternative-color);
     font-weight: 500;
+    cursor: pointer;
 }
 
 .skills {
@@ -45,4 +46,51 @@
 .card p {
     margin-top: 10px;
     color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .what_i_do {
+        margin-top: 80px;
+    }
+
+    .description h2 {
+        font-size: 2.4em;
+    }
+
+    .description p {
+        font-size: 1.4em;
+    }
+
+    .description p a:hover {
+        text-decoration: underline;
+    }
+
+    .skills {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(50% - 30px);
+        margin: 15px;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon img {
+        width: 40px;
+    }
+
+    .card span {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 1.2em;
+    }
 }

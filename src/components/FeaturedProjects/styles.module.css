@@ -45,3 +45,41 @@
     color: var(--main-text-color);
     font-weight: 500;
 }
+
+@media screen and (min-width: 768px) {
+    .featured_projects {
+        margin-top: 80px;
+    }
+
+    .description h2 {
+        font-size: 2.4em;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(33.3% - 30px);
+        margin: 15px;
+        transition: all .3s ease;
+    }
+
+    .card:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .desc span {
+        font-size: 1.4em;
+    }
+
+    .desc p {
+        font-size: 1.2em;
+    }
+}
