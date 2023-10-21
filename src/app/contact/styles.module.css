@@ -30,8 +30,32 @@
     align-items: center;
 }
 
+.links a {
+    margin: 0 10px;
+}
+
 .links img {
-    margin: 0 5px;
     width: 25px;
     height: auto;
+}
+
+@media screen and (min-width: 960px) {
+    .description h2 {
+        font-size: 2.4em;
+    }
+
+    .description p {
+        font-size: 1.4em;
+    }
+
+    .links {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links img {
+        width: 35px;
+    }
 }
