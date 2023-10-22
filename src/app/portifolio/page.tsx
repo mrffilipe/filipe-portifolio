@@ -11,7 +11,7 @@ const Portifolio = () => {
             <div className={styles.description}>
                 <h2>Portifolio</h2>
                 <p>
-                    Welcome to my online portifolio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet elit eu dolor malesuada auctor.
+                    Welcome to my online portfolio. Below, you'll find a showcase of my projects. Feel free to explore them to see the real-world examples of my work.
                 </p>
                 <Link href='/contact'>
                     <SendOutlined />

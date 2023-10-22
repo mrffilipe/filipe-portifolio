@@ -1,47 +1,39 @@
 import { Project } from "@/components/ProjectCard";
 
-import Picture from '@/assets/img/projects.jpg'
+import LearnDataStructureImg from '@/assets/img/projects.jpg'
+import PlanarWebsiteImg from '@/assets/img/planar_website.png'
+import EnterpriseImg from '@/assets/img/enterprise_landing_page.png'
 
 let projects: Array<Project> = [
     {
         link: '#',
         image: {
-            src: Picture,
-            alt: ''
+            src: LearnDataStructureImg,
+            alt: 'Learn data structure website'
         },
-        title: 'Planar website',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet pretium augue. Pellentesque tristique scelerisque felis, ac vulputate erat tincidunt sit amet.',
+        title: 'Learn data structure',
+        text: 'I created an interactive website to teach data structures in computing, making learning lists, stacks, queues and trees more accessible and engaging.',
         favorite: true
     },
     {
-        link: '#',
+        link: 'https://planar-website.web.app/',
         image: {
-            src: Picture,
-            alt: ''
+            src: PlanarWebsiteImg,
+            alt: 'Planar Engineering website'
         },
         title: 'Planar website',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet pretium augue. Pellentesque tristique scelerisque felis, ac vulputate erat tincidunt sit amet.',
-        favorite: false
-    },
-    {
-        link: '#',
-        image: {
-            src: Picture,
-            alt: ''
-        },
-        title: 'Planar website',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet pretium augue. Pellentesque tristique scelerisque felis, ac vulputate erat tincidunt sit amet.',
+        text: 'I developed the website for a company specializing in electrical engineering and crop spraying with drones, providing a solid and informative online presence.',
         favorite: true
     },
     {
-        link: '#',
+        link: 'https://enterprisecorporate.com/',
         image: {
-            src: Picture,
-            alt: ''
+            src: EnterpriseImg,
+            alt: 'Enterprise programming and IT agency landing page'
         },
-        title: 'Planar website',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet pretium augue. Pellentesque tristique scelerisque felis, ac vulputate erat tincidunt sit amet.',
-        favorite: false
+        title: 'Enterprise landing page',
+        text: 'I developed the landing page for a programming and IT agency, highlighting its services and expertise in technology and software, attracting potential customers.',
+        favorite: true
     }
 ]
 

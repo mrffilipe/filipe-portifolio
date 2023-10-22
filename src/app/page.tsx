@@ -19,7 +19,7 @@ export default function Home() {
             <h1>Filipe Ferracioli</h1>
             <h3>Software Engineer</h3>
             <p>
-              A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet. Check out my project <a>portfolio</a>.
+              I'm a passionate backend developer with a strong focus on creating robust systems to elevate online experiences. Although my specialty is back-end development, I am also proficient in front-end. My main experience revolves around creating APIs and I have delved into software architecture. My favorite languages are C# and TypeScript/JS. Check out my project <Link href='/portifolio'>portfolio</Link>.
             </p>
           </div>
           <div className={styles.profile}></div>

@@ -19,7 +19,7 @@ const WhatIDo = () => {
             <div className={styles.description}>
                 <h2>What I do</h2>
                 <p>
-                    A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet. Check out my project <a>portfolio</a>.
+                    Specializing in developing scalable and solid APIs, my work revolves around software architecture. I am passionate about testing and clean code, ensuring that every system I develop meets the highest quality standards.
                 </p>
             </div>
             <div className={styles.skills}>
