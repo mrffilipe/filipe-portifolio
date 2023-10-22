@@ -9,7 +9,7 @@ const Portifolio = () => {
     return (
         <section id='portifolio' className={styles.portifolio}>
             <div className={styles.description}>
-                <h2>Portifolio</h2>
+                <h1>Portifolio</h1>
                 <p>
                     Welcome to my online portfolio. Below, you'll find a showcase of my projects. Feel free to explore them to see the real-world examples of my work.
                 </p>

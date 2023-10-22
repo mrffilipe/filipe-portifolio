@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <section id='contact' className={styles.contact}>
             <div className={styles.description}>
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p>
                     Interested in hiring me for your project or just to say hi? You can fill in the contact from below or send me an email to <span>mrffilipe@outlook.com</span>
                 </p>

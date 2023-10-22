@@ -1,12 +1,9 @@
-.description h2 {
+.description h1 {
     text-align: center;
-    font-size: 1.6em;
 }
 
 .description p {
-    margin-top: 15px;
     text-align: center;
-    color: var(--main-text-color);
 }
 
 .description p span {
@@ -40,14 +37,6 @@
 }
 
 @media screen and (min-width: 960px) {
-    .description h2 {
-        font-size: 2.4em;
-    }
-
-    .description p {
-        font-size: 1.4em;
-    }
-
     .links {
         margin-top: 15px;
         display: flex;

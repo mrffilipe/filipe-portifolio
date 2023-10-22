@@ -5,9 +5,7 @@ import Projects from '../Projects'
 const FeaturedProjects = () => {
     return (
         <section id='featured_projects' className={styles.featured_projects}>
-            <div className={styles.description}>
-                <h2>Featured projects</h2>
-            </div>
+            <h2>Featured projects</h2>
             <Projects favoritesOnly />
         </section>
     )

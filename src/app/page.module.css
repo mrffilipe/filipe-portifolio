@@ -1,17 +1,9 @@
-.description h1 {
-    font-size: 2.2em;
-}
-
-.description h3 {
-    margin-top: 10px;
+.description span {
+    display: block;
+    margin-top: .5em;
     color: var(--main-text-color);
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 400;
-}
-
-.description p {
-    margin-top: 15px;
-    color: var(--main-text-color);
 }
 
 .description p a {
@@ -19,6 +11,7 @@
     color: var(--alternative-color);
     font-weight: 500;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .profile {
@@ -42,9 +35,9 @@
     text-decoration: none;
     background-color: var(--alternative-color);
     border-radius: 4px;
-    padding: 16px 0;
+    padding: 12px 16px;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,17 +80,12 @@
         align-items: center;
     }
 
-    .description h1 {
-        font-size: 3.2em;
-    }
-
-    .description h3 {
-        font-size: 2.2em;
+    .description span {
+        font-size: 1.7em;
     }
 
     .description p {
         max-width: 850px;
-        font-size: 1.4em;
     }
 
     .description p a:hover {
@@ -121,7 +109,7 @@
     }
 
     .actions>a {
-        padding: 12px 16px;
+        font-size: 1.2em;
     }
 
     .actions>a:hover {
