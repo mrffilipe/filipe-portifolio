@@ -5,7 +5,7 @@ import Skills from '@/services/skillService'
 import SkillCard from '../SkillCard'
 
 const WhatIDo = () => {
-    let skills = Skills.map((skill, index) =>
+    const skills = Skills.map((skill, index) =>
         <SkillCard
             icons={skill.icons}
             title={skill.title}

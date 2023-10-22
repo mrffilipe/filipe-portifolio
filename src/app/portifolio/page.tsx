@@ -1,10 +1,9 @@
 import styles from './styles.module.css'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { SendOutlined } from '@mui/icons-material'
 
-import Picture from '@/assets/img/projects.jpg'
+import Projects from '@/components/Projects'
 
 const Portifolio = () => {
     return (
@@ -19,52 +18,7 @@ const Portifolio = () => {
                     Hire Me
                 </Link>
             </div>
-            <div className={styles.projects}>
-                <div className={styles.card}>
-                    <Link href='#'>
-                        <Image src={Picture} alt='' />
-                        <div className={styles.desc}>
-                            <span>Planar website</span>
-                            <p>
-                                A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet.
-                            </p>
-                        </div>
-                    </Link>
-                </div>
-                <div className={styles.card}>
-                    <Link href='#'>
-                        <Image src={Picture} alt='' />
-                        <div className={styles.desc}>
-                            <span>Planar website</span>
-                            <p>
-                                A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet.
-                            </p>
-                        </div>
-                    </Link>
-                </div>
-                <div className={styles.card}>
-                    <Link href='#'>
-                        <Image src={Picture} alt='' />
-                        <div className={styles.desc}>
-                            <span>Planar website</span>
-                            <p>
-                                A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet.
-                            </p>
-                        </div>
-                    </Link>
-                </div>
-                <div className={styles.card}>
-                    <Link href='#'>
-                        <Image src={Picture} alt='' />
-                        <div className={styles.desc}>
-                            <span>Planar website</span>
-                            <p>
-                                A backend developer who loves to create solid and effective systems to enhance online experiences, building the foundation of the internet.
-                            </p>
-                        </div>
-                    </Link>
-                </div>
-            </div>
+            <Projects />
         </section>
     )
 }
