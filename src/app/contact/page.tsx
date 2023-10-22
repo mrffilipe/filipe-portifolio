@@ -3,6 +3,8 @@ import styles from './styles.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Links from '@/components/Links'
+
 import LinkedinSvg from '@/assets/svg/linkedin.svg'
 import GithubSvg from '@/assets/svg/github.svg'
 
@@ -19,14 +21,7 @@ const Contact = () => {
                 <p>
                     Want to get connected? Follow me on the social channels below.
                 </p>
-                <div className={styles.links}>
-                    <Link href="https://www.linkedin.com/in/filipemrf/" target='_blank'>
-                        <Image src={LinkedinSvg} alt="Linkedin icons8" />
-                    </Link>
-                    <Link href="https://github.com/mrffilipe" target='_blank'>
-                        <Image src={GithubSvg} alt="Github icons8" />
-                    </Link>
-                </div>
+                <Links />
             </div>
         </section>
     )

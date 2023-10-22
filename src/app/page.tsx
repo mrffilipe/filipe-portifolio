@@ -1,20 +1,18 @@
 import styles from './page.module.css'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowCircleRight } from '@mui/icons-material'
 
+import LinkButton from '@/components/LinkButton'
+import Links from '@/components/Links'
 import WhatIDo from '@/components/WhatIDo'
 import FeaturedProjects from '@/components/FeaturedProjects'
-
-import LinkedinSvg from '@/assets/svg/linkedin.svg'
-import GithubSvg from '@/assets/svg/github.svg'
 
 export default function Home() {
   return (
     <>
-      <section id='about_me' className={styles.about_me}>
-        <div className={styles.presentation}>
+      <section id='home' className={styles.home}>
+        <div className={styles.about_me}>
           <div className={styles.description}>
             <h1>Filipe Ferracioli</h1>
             <span>Software Engineer</span>
@@ -25,18 +23,12 @@ export default function Home() {
           <div className={styles.profile}></div>
         </div>
         <div className={styles.actions}>
-          <Link href='/portifolio'>
-            <ArrowCircleRight />
-            View Portifolio
-          </Link>
-          <div className={styles.links}>
-            <Link href="https://www.linkedin.com/in/filipemrf/" target='_blank'>
-              <Image src={LinkedinSvg} alt="Linkedin icons8" />
-            </Link>
-            <Link href="https://github.com/mrffilipe" target='_blank'>
-              <Image src={GithubSvg} alt="GitHub icons8" />
-            </Link>
-          </div>
+          <LinkButton
+            href='/portifolio'
+            value='View Portifolio'
+            icon={ArrowCircleRight}
+          />
+          <Links />
         </div>
       </section>
       <WhatIDo />

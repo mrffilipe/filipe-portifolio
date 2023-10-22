@@ -1,9 +1,9 @@
 import styles from './styles.module.css'
 
-import Link from 'next/link'
 import { SendOutlined } from '@mui/icons-material'
 
 import Projects from '@/components/Projects'
+import LinkButton from '@/components/LinkButton'
 
 const Portifolio = () => {
     return (
@@ -13,10 +13,11 @@ const Portifolio = () => {
                 <p>
                     Welcome to my online portfolio. Below, you'll find a showcase of my projects. Feel free to explore them to see the real-world examples of my work.
                 </p>
-                <Link href='/contact'>
-                    <SendOutlined />
-                    Hire Me
-                </Link>
+                <LinkButton
+                    href='/contact'
+                    value='Hire Me'
+                    icon={SendOutlined}
+                />
             </div>
             <Projects />
         </section>

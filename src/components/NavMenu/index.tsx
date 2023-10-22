@@ -33,7 +33,7 @@ const NavMenu = () => {
                     <li>
                         <Link href='/' onClick={handleToggleMenu}>
                             <PersonOutline />
-                            About me
+                            Home
                         </Link>
                     </li>
                     <li>
