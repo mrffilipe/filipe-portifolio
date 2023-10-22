@@ -1,10 +1,19 @@
 import styles from './styles.module.css'
 
-import Image from 'next/image'
+import Skills from '@/services/skillService'
 
-import LinkedinIcon from '@/assets/svg/linkedin.svg'
+import SkillCard from '../SkillCard'
 
 const WhatIDo = () => {
+    let skills = Skills.map((skill, index) =>
+        <SkillCard
+            icons={skill.icons}
+            title={skill.title}
+            text={skill.text}
+            key={index}
+        />
+    )
+
     return (
         <section id='what_i_do' className={styles.what_i_do}>
             <div className={styles.description}>
@@ -14,50 +23,7 @@ const WhatIDo = () => {
                 </p>
             </div>
             <div className={styles.skills}>
-                <div className={styles.card}>
-                    <div className={styles.icon}>
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                    </div>
-                    <span>TypeScript</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac tellus aliquam, sagittis massa posuere.
-                    </p>
-                </div>
-                <div className={styles.card}>
-                    <div className={styles.icon}>
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                    </div>
-                    <span>TypeScript</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac tellus aliquam, sagittis massa posuere.
-                    </p>
-                </div>
-                <div className={styles.card}>
-                    <div className={styles.icon}>
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                    </div>
-                    <span>TypeScript</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac tellus aliquam, sagittis massa posuere.
-                    </p>
-                </div>
-                <div className={styles.card}>
-                    <div className={styles.icon}>
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                        <Image src={LinkedinIcon} alt='' />
-                    </div>
-                    <span>TypeScript</span>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac tellus aliquam, sagittis massa posuere.
-                    </p>
-                </div>
+                {skills}
             </div>
         </section>
     )

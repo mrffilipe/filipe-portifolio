@@ -24,30 +24,6 @@
     margin-top: 30px;
 }
 
-.card {
-    margin: 15px 0;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-}
-
-.icon img {
-    margin-right: 5px;
-    width: 30px;
-    height: auto;
-}
-
-.card span {
-    font-weight: 700;
-}
-
-.card p {
-    margin-top: 10px;
-    color: var(--main-text-color);
-}
-
 @media screen and (min-width: 960px) {
     .what_i_do {
         margin-top: 80px;
@@ -70,27 +46,5 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    .card {
-        width: calc(50% - 30px);
-        margin: 15px;
-    }
-
-    .icon {
-        display: flex;
-        align-items: center;
-    }
-
-    .icon img {
-        width: 40px;
-    }
-
-    .card span {
-        font-size: 1.4em;
-    }
-
-    .card p {
-        font-size: 1.2em;
     }
 }
