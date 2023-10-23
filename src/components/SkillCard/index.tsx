@@ -20,7 +20,7 @@ const SkillCard = (skill: Skill) => {
 
     return (
         <div className={styles.card}>
-            <div className={styles.icon}>
+            <div className={styles.icons}>
                 {icons}
             </div>
             <span>{skill.title}</span>

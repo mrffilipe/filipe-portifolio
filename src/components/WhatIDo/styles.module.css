@@ -7,13 +7,6 @@
     border-left: 3px solid var(--alternative-color);
 }
 
-.description p a {
-    text-decoration: none;
-    color: var(--alternative-color);
-    font-weight: 500;
-    cursor: pointer;
-}
-
 .skills {
     margin-top: 30px;
 }
@@ -23,12 +16,7 @@
         margin-top: 80px;
     }
 
-    .description p a:hover {
-        text-decoration: underline;
-    }
-
     .skills {
-        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

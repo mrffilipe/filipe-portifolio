@@ -19,15 +19,13 @@ export type Project = {
 
 const ProjectCard = (project: Project) => {
     return (
-        <div className={styles.card}>
-            <Link href={project.link}>
-                <Image src={project.image.src} alt={project.image.alt} />
-                <div className={styles.desc}>
-                    <span>{project.title}</span>
-                    <p>{project.text}</p>
-                </div>
-            </Link>
-        </div>
+        <Link href={project.link} className={styles.card}>
+            <Image src={project.image.src} alt={project.image.alt} />
+            <div className={styles.desc}>
+                <span>{project.title}</span>
+                <p>{project.text}</p>
+            </div>
+        </Link>
     )
 }
 
